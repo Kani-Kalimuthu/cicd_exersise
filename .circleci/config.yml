@@ -51,8 +51,7 @@ jobs:
       - run:
           name: Configure server
           command: |
-            ansible-playbook -i inventory.txt main.yml
-            ansible-playbook main.yml -i inventory.txt --private-key cicd_keypair.pem
+            ansible-playbook -i inventory.txt main4.yml
 workflows:
   # Name the workflow "welcome"
   my_workflow:
